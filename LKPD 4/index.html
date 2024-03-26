@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // soal 1
+
+        let dpk = 50;
+let mtk = 65;
+let agama= 56;
+let rata;
+
+rata = [dpk + mtk + agama] / 3
+rata = Math.round(rata)
+console.log(rata)
+
+if(rata > 80 && rata <= 100){
+    console.log('a')
+}else if( rata > 75 && rata <= 80){
+    console.log('b')
+}else if(rata > 65 && rata <= 75){
+    console.log('c')
+}else if (rata > 45 && rata <= 65){
+    console.log('d')
+}else if(rata > 0 && rata <= 45){
+    console.log("E")
+}else{
+    console.log("kamu gagal")
+}
+
+//soal 2
+  
+<!-- let g = (Math.random() * 10) + 1; 
+g = Math.round(g)
+const dd = new Date().getDate(); // mengambil hari saat ini
+const mm = 5; 
+const yyyy = new Date().getFullYear(); // mengambil tahun saat ini
+let nn =(Math.random() * 10) + 1 ; 
+nn = Math.round(nn)
+const gddmmyyynn = `${g}${dd}${mm}${yyyy}${nn}`;
+
+console.log(gddmmyyynn); -->
+
+ let kode = 12345678910;
+        let g;
+        let dd;
+        let mm;
+        let yyyy;
+        let nn;
+
+        g = Math.floor(kode / 10000000000);
+        dd = Math.floor((kode / 10000000) %100);
+        mm = Math.floor((kode / 1000000)%100);
+        yyyy = Math.floor((kode / 100)%10000);
+        nn = Math.floor(kode % 100);
+        
+        switch(mm) {
+            case 1 : "januari";
+            break;
+            
+            case 2 : "februari";
+            break;
+            
+            case 3 : "maret";
+            break;
+
+            case 4 : "april";
+            break;
+
+            case 5 : "mei";
+            break;
+
+            default :"bulan no valid"
+        
+        }
+            console.log(g)
+            console.log(dd)
+            console.log(mm)
+            console.log(yyyy)
+            console.log(nn) 
+
+//soal 3
+
+let hh = 6; //input
+let m = 48; //input
+let ss = 10; //input
+
+
+//pull 
+if (ss + 1 == 60) {
+    ss = 0;
+    m++;
+
+    if (m == 60) {
+        m = 0;
+        hh++;
+
+        if (hh == 24) {
+            hh = 0;
+            m = 0;
+            ss = 0
+        }
+    } else {
+        m++;
+    }
+} else {
+    ss++;
+}
+ 
+console.log(`Jam ${hh}, Menit ${m}, Detik ${ss}`);
+    </script>
+</body>
+</html>
